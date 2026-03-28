@@ -5,6 +5,8 @@
 [![hacs_badge](https://img.shields.io/badge/HACS-Custom-orange.svg)](https://github.com/hacs/integration)
 [![HA Version](https://img.shields.io/badge/Home%20Assistant-2024.1+-blue.svg)](https://www.home-assistant.io)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Donate-yellow.svg?style=for-the-badge)](https://www.buymeacoffee.com/janfajessen)
+[![Patreon](https://img.shields.io/badge/Patreon-Support-red.svg?style=for-the-badge)](https://www.patreon.com/janfajessen)
 
 A Home Assistant integration that tracks active and erupting volcanoes worldwide. Every active volcano appears as a pin on the HA map. Sensors and binary sensors enable automations and dashboards.
 
@@ -303,11 +305,11 @@ logger:
 
 ## Translations
 
-The integration UI is available in: **CA · DE · EN · ES · FR · IT · PT**
+The integration UI is available in multiple languages.
 
-Home Assistant supports approximately **60+ languages** in its frontend. If you want to contribute a translation for your language, copy `translations/en.json`, translate all the values (keep all keys and `{placeholders}` unchanged), and name the file with the correct [BCP 47 language tag](https://www.iana.org/assignments/language-subtag-registry) (e.g. `nl.json`, `pl.json`, `zh-Hans.json`).
 
-[DeepL](https://deepl.com/translator) works well for this — paste the JSON directly and it respects the key structure.
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Donate-yellow.svg?style=for-the-badge)](https://www.buymeacoffee.com/janfajessen)
+[![Patreon](https://img.shields.io/badge/Patreon-Support-red.svg?style=for-the-badge)](https://www.patreon.com/janfajessen)
 
 ---
 
