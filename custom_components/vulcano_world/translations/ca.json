@@ -1,0 +1,95 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Volcano World",
+        "description": "Configura quins volcans actius vols monitorar.\n\nFonts de dades: [Smithsonian GVP]({gvp_url}) + [USGS HANS]({usgs_url}) — sense clau API.",
+        "data": {
+          "location_mode": "Filtre d'ubicació",
+          "radius_km": "Radi (km)",
+          "update_interval": "Interval d'actualització (min)",
+          "source_gvp": "Smithsonian GVP (global, ~45 volcans actius)",
+          "source_usgs": "USGS HANS (EUA + nivells d'alerta)",
+          "unit": "Unitat de distància"
+        },
+        "data_description": {
+          "location_mode": "Tria 'Home' per filtrar per la teva ubicació de HA, 'Personalitzada' per seleccionar un punt al mapa, o 'Món' per veure tots els volcans actius globalment.",
+          "radius_km": "Només rellevant si el mode és 'Home' o 'Personalitzada'. S'ignora en mode 'Món'."
+        }
+      },
+      "custom_location": {
+        "title": "Selecciona la ubicació de referència",
+        "description": "Fes clic al mapa per establir el centre del radi de filtrat.",
+        "data": {
+          "location": "Ubicació de referència"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "No s'ha pogut connectar a les fonts de dades. Comprova la connexió a internet.",
+      "no_data": "No s'ha pogut obtenir cap dada de volcà actiu de cap font.",
+      "both_sources_disabled": "Cal tenir almenys una font de dades habilitada."
+    },
+    "abort": {
+      "already_configured": "Volcano World is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Volcano World – Configuració",
+        "description": "Actualitza el filtre i les preferències de fonts de dades.",
+        "data": {
+          "location_mode": "Filtre d'ubicació",
+          "radius_km": "Radi (km)",
+          "update_interval": "Interval d'actualització (min)",
+          "source_gvp": "Smithsonian GVP",
+          "source_usgs": "USGS HANS",
+          "unit": "Unitat de distància"
+        }
+      },
+      "custom_location": {
+        "title": "Actualitzar ubicació de referència",
+        "data": {
+          "location": "Ubicació de referència"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "active_count": {
+        "name": "Volcans actius"
+      },
+      "weekly_report_count": {
+        "name": "A l'informe setmanal"
+      },
+      "elevated_count": {
+        "name": "Volcans amb alerta elevada"
+      },
+      "highest_alert": {
+        "name": "Nivell d'alerta màxim"
+      },
+      "nearby_count": {
+        "name": "Volcans actius propers"
+      },
+      "closest_volcano": {
+        "name": "Volcà actiu més proper"
+      },
+      "most_dangerous_volcano": {
+        "name": "Volcà més perillós"
+      }
+    },
+    "binary_sensor": {
+      "activity_nearby": {
+        "name": "Activitat volcànica propera"
+      },
+      "elevated_nearby": {
+        "name": "Volcà en alerta proper"
+      },
+      "warning_global": {
+        "name": "Alerta volcànica global"
+      }
+    }
+  }
+}

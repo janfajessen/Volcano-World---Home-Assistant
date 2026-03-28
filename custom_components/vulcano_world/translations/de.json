@@ -1,0 +1,95 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Volcano World",
+        "description": "Konfiguriere, welche aktiven Vulkane überwacht werden sollen.\n\nDatenquellen: [Smithsonian GVP]({gvp_url}) + [USGS HANS]({usgs_url}) — kein API-Schlüssel erforderlich.",
+        "data": {
+          "location_mode": "Standortfilter",
+          "radius_km": "Radius (km)",
+          "update_interval": "Aktualisierungsintervall (Min.)",
+          "source_gvp": "Smithsonian GVP (global, ~45 aktive Vulkane)",
+          "source_usgs": "USGS HANS (USA + Warnstufen)",
+          "unit": "Entfernungseinheit"
+        },
+        "data_description": {
+          "location_mode": "Wähle 'Home' für deinen HA-Standort, 'Benutzerdefiniert' für einen Kartenpunkt oder 'Welt' für alle aktiven Vulkane weltweit.",
+          "radius_km": "Nur relevant bei Modus 'Home' oder 'Benutzerdefiniert'. Im Modus 'Welt' ignoriert."
+        }
+      },
+      "custom_location": {
+        "title": "Referenzstandort auswählen",
+        "description": "Klicke auf die Karte, um den Mittelpunkt des Filterradius festzulegen.",
+        "data": {
+          "location": "Referenzstandort"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Verbindung zu den Datenquellen fehlgeschlagen. Bitte Internetverbindung prüfen.",
+      "no_data": "Es konnten keine Daten aktiver Vulkane abgerufen werden.",
+      "both_sources_disabled": "Mindestens eine Datenquelle muss aktiviert sein."
+    },
+    "abort": {
+      "already_configured": "Volcano World is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Volcano World – Einstellungen",
+        "description": "Filter und Datenquellen anpassen.",
+        "data": {
+          "location_mode": "Standortfilter",
+          "radius_km": "Radius (km)",
+          "update_interval": "Aktualisierungsintervall (Min.)",
+          "source_gvp": "Smithsonian GVP",
+          "source_usgs": "USGS HANS",
+          "unit": "Entfernungseinheit"
+        }
+      },
+      "custom_location": {
+        "title": "Referenzstandort aktualisieren",
+        "data": {
+          "location": "Referenzstandort"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "active_count": {
+        "name": "Aktive Vulkane"
+      },
+      "weekly_report_count": {
+        "name": "Im Wochenbericht"
+      },
+      "elevated_count": {
+        "name": "Vulkane mit erhöhter Warnstufe"
+      },
+      "highest_alert": {
+        "name": "Höchste Warnstufe"
+      },
+      "nearby_count": {
+        "name": "Aktive Vulkane in der Nähe"
+      },
+      "closest_volcano": {
+        "name": "Nächstgelegener aktiver Vulkan"
+      },
+      "most_dangerous_volcano": {
+        "name": "Gefährlichster Vulkan"
+      }
+    },
+    "binary_sensor": {
+      "activity_nearby": {
+        "name": "Vulkanische Aktivität in der Nähe"
+      },
+      "elevated_nearby": {
+        "name": "Vulkan mit erhöhter Warnstufe in der Nähe"
+      },
+      "warning_global": {
+        "name": "Globale Vulkanwarnung"
+      }
+    }
+  }
+}

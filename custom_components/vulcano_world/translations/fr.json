@@ -1,0 +1,95 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Volcano World",
+        "description": "Configurez les volcans actifs à surveiller.\n\nSources de données : [Smithsonian GVP]({gvp_url}) + [USGS HANS]({usgs_url}) — sans clé API.",
+        "data": {
+          "location_mode": "Filtre de localisation",
+          "radius_km": "Rayon (km)",
+          "update_interval": "Intervalle de mise à jour (min)",
+          "source_gvp": "Smithsonian GVP (mondial, ~45 volcans actifs)",
+          "source_usgs": "USGS HANS (États-Unis + niveaux d'alerte)",
+          "unit": "Unité de distance"
+        },
+        "data_description": {
+          "location_mode": "Choisissez 'Home' pour filtrer par votre emplacement HA, 'Personnalisé' pour choisir un point sur la carte, ou 'Monde' pour afficher tous les volcans actifs.",
+          "radius_km": "Pertinent uniquement si le mode est 'Home' ou 'Personnalisé'. Ignoré en mode 'Monde'."
+        }
+      },
+      "custom_location": {
+        "title": "Sélectionnez l'emplacement de référence",
+        "description": "Cliquez sur la carte pour définir le centre du rayon de filtrage.",
+        "data": {
+          "location": "Emplacement de référence"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Impossible de se connecter aux sources de données. Vérifiez votre connexion internet.",
+      "no_data": "Aucune donnée de volcan actif n'a pu être récupérée.",
+      "both_sources_disabled": "Au moins une source de données doit être activée."
+    },
+    "abort": {
+      "already_configured": "Volcano World is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Volcano World – Paramètres",
+        "description": "Mettez à jour le filtre et les préférences de sources de données.",
+        "data": {
+          "location_mode": "Filtre de localisation",
+          "radius_km": "Rayon (km)",
+          "update_interval": "Intervalle de mise à jour (min)",
+          "source_gvp": "Smithsonian GVP",
+          "source_usgs": "USGS HANS",
+          "unit": "Unité de distance"
+        }
+      },
+      "custom_location": {
+        "title": "Mettre à jour l'emplacement de référence",
+        "data": {
+          "location": "Emplacement de référence"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "active_count": {
+        "name": "Volcans actifs"
+      },
+      "weekly_report_count": {
+        "name": "Dans le rapport hebdomadaire"
+      },
+      "elevated_count": {
+        "name": "Volcans en alerte élevée"
+      },
+      "highest_alert": {
+        "name": "Niveau d'alerte maximal"
+      },
+      "nearby_count": {
+        "name": "Volcans actifs à proximité"
+      },
+      "closest_volcano": {
+        "name": "Volcan actif le plus proche"
+      },
+      "most_dangerous_volcano": {
+        "name": "Volcan le plus dangereux"
+      }
+    },
+    "binary_sensor": {
+      "activity_nearby": {
+        "name": "Activité volcanique à proximité"
+      },
+      "elevated_nearby": {
+        "name": "Volcan en alerte à proximité"
+      },
+      "warning_global": {
+        "name": "Alerte volcanique mondiale"
+      }
+    }
+  }
+}
