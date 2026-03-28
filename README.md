@@ -27,7 +27,7 @@ A Home Assistant integration that tracks active and erupting volcanoes worldwide
 | 🔄 Live data | Configurable update interval (15 min minimum) |
 | ⚙️ Reconfigure | Gear icon changes all settings without restarting HA |
 | 🌍 Built-in database | ~100 volcanoes with coordinates, country, and type |
-| 🌐 Multilingual | CA · DE · EN · ES · FR · IT · PT |
+| 🌐 Multilingual | CA · DE · EN · ES · FR · IT · PT · ... |
 
 ---
 
