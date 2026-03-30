@@ -14,7 +14,7 @@
         },
         "data_description": {
           "location_mode": "Pilih 'Rumah' untuk memfilter berdasarkan lokasi HA Anda, 'Kustom' untuk memilih titik pada peta, atau 'Dunia' untuk menampilkan semua gunung berapi aktif secara global.",
-          "radius_km": "Hanya digunakan dalam mode 'Rumah' atau 'Kustom'. Diabaikan dalam mode 'Dunia'."
+          "radius_km": "Rentang: 50–20.000 km · 31–12.427 mil"
         }
       },
       "custom_location": {
@@ -46,6 +46,9 @@
           "source_gvp": "Smithsonian GVP",
           "source_usgs": "USGS HANS",
           "unit": "Satuan jarak"
+        },
+        "data_description": {
+          "radius_km": "Rentang: 50–20.000 km · 31–12.427 mil"
         }
       },
       "custom_location": {
