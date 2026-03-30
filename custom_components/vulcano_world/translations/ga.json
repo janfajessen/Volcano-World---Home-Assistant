@@ -1,0 +1,95 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Domhan na mBolcán",
+        "description": "Cumraigh cén bholcáin ghníomhacha ba mhaith leat monatóireacht a dhéanamh orthu.\n\nFoinsí sonraí: [Smithsonian GVP]({gvp_url}) + [USGS HANS]({usgs_url}) — níl aon eochair API ag teastáil.",
+        "data": {
+          "location_mode": "Scagaire suímh",
+          "radius_km": "Ga (km)",
+          "update_interval": "Eatramh nuashonraithe (nóim)",
+          "source_gvp": "Smithsonian GVP (domhanda, ~45 bolcán gníomhach)",
+          "source_usgs": "USGS HANS (Stáit Aontaithe + leibhéil foláirimh)",
+          "unit": "Aonad achair"
+        },
+        "data_description": {
+          "location_mode": "Roghnaigh 'Baile' chun scagadh de réir do shuímh HA, 'Saincheaptha' chun pointe ar an léarscáil a roghnú, nó 'Domhan' chun gach bolcán gníomhach ar fud an domhain a thaispeáint.",
+          "radius_km": "Ní úsáidtear é ach i mód 'Baile' nó 'Saincheaptha'. Déantar neamhaird de i mód 'Domhan'."
+        }
+      },
+      "custom_location": {
+        "title": "Roghnaigh do shuíomh tagartha",
+        "description": "Cliceáil ar an léarscáil chun lár an gha scagaire a shocrú.",
+        "data": {
+          "location": "Suíomh tagartha"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Níorbh fhéidir ceangal leis na foinsí sonraí. Seiceáil do cheangal idirlín.",
+      "no_data": "Níorbh fhéidir sonraí bolcáin ghníomhaigh a fháil ó aon fhoinse.",
+      "both_sources_disabled": "Caithfidh foinse sonraí amháin ar a laghad a bheith cumasaithe."
+    },
+    "abort": {
+      "already_configured": "Tá Domhan na mBolcán cumraithe cheana féin."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Domhan na mBolcán",
+        "description": "Nuashonraigh roghanna scagaire agus foinse sonraí.",
+        "data": {
+          "location_mode": "Scagaire suímh",
+          "radius_km": "Ga (km)",
+          "update_interval": "Eatramh nuashonraithe (nóim)",
+          "source_gvp": "Smithsonian GVP",
+          "source_usgs": "USGS HANS",
+          "unit": "Aonad achair"
+        }
+      },
+      "custom_location": {
+        "title": "Nuashonraigh suíomh tagartha",
+        "data": {
+          "location": "Suíomh tagartha"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "active_count": {
+        "name": "Bolcáin Ghníomhacha"
+      },
+      "weekly_report_count": {
+        "name": "Sa Tuarascáil Sheachtainiúil"
+      },
+      "elevated_count": {
+        "name": "Bolcáin le Foláireamh Ardaithe"
+      },
+      "highest_alert": {
+        "name": "Leibhéal Foláirimh is Airde"
+      },
+      "nearby_count": {
+        "name": "Bolcáin Ghníomhacha in aice láimhe"
+      },
+      "closest_volcano": {
+        "name": "Bolcán Gníomhach is Gaire"
+      },
+      "most_dangerous_volcano": {
+        "name": "Bolcán is Contúirtí"
+      }
+    },
+    "binary_sensor": {
+      "activity_nearby": {
+        "name": "Gníomhaíocht Bholcánach in aice láimhe"
+      },
+      "elevated_nearby": {
+        "name": "Bolcán le Foláireamh Ardaithe in aice láimhe"
+      },
+      "warning_global": {
+        "name": "Rabhadh Bolcánach Domhanda"
+      }
+    }
+  }
+}
