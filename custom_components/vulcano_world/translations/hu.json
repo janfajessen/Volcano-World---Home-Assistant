@@ -1,0 +1,95 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Vulkánvilág",
+        "description": "Állítsd be, mely aktív vulkánokat figyelje.\n\nAdatforrások: [Smithsonian GVP]({gvp_url}) + [USGS HANS]({usgs_url}) — nem szükséges API-kulcs.",
+        "data": {
+          "location_mode": "Helyszűrő",
+          "radius_km": "Sugár (km)",
+          "update_interval": "Frissítési intervallum (perc)",
+          "source_gvp": "Smithsonian GVP (globális, ~45 aktív vulkán)",
+          "source_usgs": "USGS HANS (USA + riasztási szintek)",
+          "unit": "Távolság mértékegysége"
+        },
+        "data_description": {
+          "location_mode": "Válaszd az 'Otthon' lehetőséget a HA-hely szerinti szűréshez, az 'Egyéni' lehetőséget egy pont kiválasztásához a térképen, vagy a 'Világ' lehetőséget az összes aktív vulkán megjelenítéséhez világszerte.",
+          "radius_km": "Csak az 'Otthon' vagy 'Egyéni' módban használatos. A 'Világ' módban figyelmen kívül marad."
+        }
+      },
+      "custom_location": {
+        "title": "Válaszd ki a referenciahelyed",
+        "description": "Kattints a térképre a szűrősugár középpontjának beállításához.",
+        "data": {
+          "location": "Referenciahely"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Nem sikerült csatlakozni az adatforrásokhoz. Ellenőrizd az internetkapcsolatod.",
+      "no_data": "Egyetlen forrásból sem sikerült aktív vulkánadatokat lekérni.",
+      "both_sources_disabled": "Legalább egy adatforrást engedélyezni kell."
+    },
+    "abort": {
+      "already_configured": "A Vulkánvilág már be van állítva."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Vulkánvilág",
+        "description": "Szűrő- és adatforrás-beállítások frissítése.",
+        "data": {
+          "location_mode": "Helyszűrő",
+          "radius_km": "Sugár (km)",
+          "update_interval": "Frissítési intervallum (perc)",
+          "source_gvp": "Smithsonian GVP",
+          "source_usgs": "USGS HANS",
+          "unit": "Távolság mértékegysége"
+        }
+      },
+      "custom_location": {
+        "title": "Referenciahely frissítése",
+        "data": {
+          "location": "Referenciahely"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "active_count": {
+        "name": "Aktív vulkánok"
+      },
+      "weekly_report_count": {
+        "name": "A heti jelentésben"
+      },
+      "elevated_count": {
+        "name": "Fokozott riasztású vulkánok"
+      },
+      "highest_alert": {
+        "name": "Legmagasabb riasztási szint"
+      },
+      "nearby_count": {
+        "name": "Aktív vulkánok a közelben"
+      },
+      "closest_volcano": {
+        "name": "Legközelebbi aktív vulkán"
+      },
+      "most_dangerous_volcano": {
+        "name": "Legveszélyesebb vulkán"
+      }
+    },
+    "binary_sensor": {
+      "activity_nearby": {
+        "name": "Vulkáni tevékenység a közelben"
+      },
+      "elevated_nearby": {
+        "name": "Fokozott riasztású vulkán a közelben"
+      },
+      "warning_global": {
+        "name": "Globális vulkánriasztás"
+      }
+    }
+  }
+}
