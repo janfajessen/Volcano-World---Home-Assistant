@@ -14,7 +14,7 @@
         },
         "data_description": {
           "location_mode": "Tria 'Casa' per filtrar per la teva ubicació de HA, 'Personalitzat' per triar un punt al mapa, o 'Món' per mostrar tots els volcans actius globalment.",
-          "radius_km": "Només s'utilitza en mode 'Casa' o 'Personalitzat'. Ignorat en mode 'Món'."
+          "radius_km": "Rang: 50–20.000 km · 31–12.427 milles"
         }
       },
       "custom_location": {
@@ -46,6 +46,9 @@
           "source_gvp": "Smithsonian GVP",
           "source_usgs": "USGS HANS",
           "unit": "Unitat de distància"
+        },
+        "data_description": {
+          "radius_km": "Rang: 50–20.000 km · 31–12.427 milles"
         }
       },
       "custom_location": {
