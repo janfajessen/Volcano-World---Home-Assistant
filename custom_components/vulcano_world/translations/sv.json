@@ -1,0 +1,95 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Vulkanvärlden",
+        "description": "Konfigurera vilka aktiva vulkaner som ska övervakas.\n\nDatakällor: [Smithsonian GVP]({gvp_url}) + [USGS HANS]({usgs_url}) — ingen API-nyckel krävs.",
+        "data": {
+          "location_mode": "Placeringsfilter",
+          "radius_km": "Radie (km)",
+          "update_interval": "Uppdateringsintervall (min)",
+          "source_gvp": "Smithsonian GVP (globalt, ~45 aktiva vulkaner)",
+          "source_usgs": "USGS HANS (USA + varningsnivåer)",
+          "unit": "Avståndsenhet"
+        },
+        "data_description": {
+          "location_mode": "Välj 'Hem' för att filtrera efter din HA-plats, 'Anpassad' för att välja en punkt på kartan, eller 'Världen' för att visa alla aktiva vulkaner globalt.",
+          "radius_km": "Används endast i läget 'Hem' eller 'Anpassad'. Ignoreras i läget 'Världen'."
+        }
+      },
+      "custom_location": {
+        "title": "Välj din referensplats",
+        "description": "Klicka på kartan för att ställa in mitten av filterradien.",
+        "data": {
+          "location": "Referensplats"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Kunde inte ansluta till datakällor. Kontrollera din internetanslutning.",
+      "no_data": "Inga aktiva vulkandata kunde hämtas från någon källa.",
+      "both_sources_disabled": "Minst en datakälla måste vara aktiverad."
+    },
+    "abort": {
+      "already_configured": "Vulkanvärlden är redan konfigurerad."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Vulkanvärlden",
+        "description": "Uppdatera filter- och datakällinställningar.",
+        "data": {
+          "location_mode": "Placeringsfilter",
+          "radius_km": "Radie (km)",
+          "update_interval": "Uppdateringsintervall (min)",
+          "source_gvp": "Smithsonian GVP",
+          "source_usgs": "USGS HANS",
+          "unit": "Avståndsenhet"
+        }
+      },
+      "custom_location": {
+        "title": "Uppdatera referensplats",
+        "data": {
+          "location": "Referensplats"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "active_count": {
+        "name": "Aktiva Vulkaner"
+      },
+      "weekly_report_count": {
+        "name": "I Veckorapporten"
+      },
+      "elevated_count": {
+        "name": "Vulkaner med Förhöjd Varning"
+      },
+      "highest_alert": {
+        "name": "Högsta Varningsnivå"
+      },
+      "nearby_count": {
+        "name": "Aktiva Vulkaner i Närheten"
+      },
+      "closest_volcano": {
+        "name": "Närmaste Aktiva Vulkan"
+      },
+      "most_dangerous_volcano": {
+        "name": "Farligaste Vulkanen"
+      }
+    },
+    "binary_sensor": {
+      "activity_nearby": {
+        "name": "Vulkanisk Aktivitet i Närheten"
+      },
+      "elevated_nearby": {
+        "name": "Vulkan med Förhöjd Varning i Närheten"
+      },
+      "warning_global": {
+        "name": "Global Vulkanvarning"
+      }
+    }
+  }
+}
