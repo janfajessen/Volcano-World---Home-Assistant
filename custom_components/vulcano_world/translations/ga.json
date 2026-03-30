@@ -14,7 +14,7 @@
         },
         "data_description": {
           "location_mode": "Roghnaigh 'Baile' chun scagadh de réir do shuímh HA, 'Saincheaptha' chun pointe ar an léarscáil a roghnú, nó 'Domhan' chun gach bolcán gníomhach ar fud an domhain a thaispeáint.",
-          "radius_km": "Ní úsáidtear é ach i mód 'Baile' nó 'Saincheaptha'. Déantar neamhaird de i mód 'Domhan'."
+          "radius_km": "Raon: 50–20,000 km · 31–12,427 míle"
         }
       },
       "custom_location": {
@@ -46,6 +46,9 @@
           "source_gvp": "Smithsonian GVP",
           "source_usgs": "USGS HANS",
           "unit": "Aonad achair"
+        },
+        "data_description": {
+          "radius_km": "Raon: 50–20,000 km · 31–12,427 míle"
         }
       },
       "custom_location": {
