@@ -14,7 +14,7 @@
         },
         "data_description": {
           "location_mode": "Dewis 'Tre' dhe sidhla herwydh dha dyller HA, 'Gwisys' dhe dhewis poynt war an gart, po 'Bes' dhe dhiskwedhes oll an leskynyow bew bydel.",
-          "radius_km": "Usys yn 'Tre' po 'Gwisys' yn unnik. Diskeryes yn modh 'Bes'."
+          "radius_km": "Kemmyn: 50–20,000 km · 31–12,427 mildir"
         }
       },
       "custom_location": {
@@ -46,6 +46,9 @@
           "source_gvp": "Smithsonian GVP",
           "source_usgs": "USGS HANS",
           "unit": "Unses pellder"
+        },
+        "data_description": {
+          "radius_km": "Kemmyn: 50–20,000 km · 31–12,427 mildir"
         }
       },
       "custom_location": {
