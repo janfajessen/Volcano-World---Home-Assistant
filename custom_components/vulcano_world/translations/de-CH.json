@@ -1,0 +1,95 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Vulkanwält",
+        "description": "Konfigurier, weli aktivi Vulkään überwacht wärde sölle.\n\nDatequelle: [Smithsonian GVP]({gvp_url}) + [USGS HANS]({usgs_url}) — kei API-Schlüssel erforderlich.",
+        "data": {
+          "location_mode": "Standortfilter",
+          "radius_km": "Radius (km)",
+          "update_interval": "Aktualisierungsintervall (min)",
+          "source_gvp": "Smithsonian GVP (wältwit, ~45 aktivi Vulkään)",
+          "source_usgs": "USGS HANS (USA + Alarmstufe)",
+          "unit": "Entfernigseinheit"
+        },
+        "data_description": {
+          "location_mode": "Wähl 'Dehei' zum nach dim HA-Standort filtere, 'Benutzerdefiniert' zum en Punkt uf de Charte uswähle, oder 'Wält' zum alli aktive Vulkään wältwit azeige.",
+          "radius_km": "Wird nur im Modus 'Dehei' oder 'Benutzerdefiniert' verwändet. Im Modus 'Wält' ignoriert."
+        }
+      },
+      "custom_location": {
+        "title": "Wähl din Referenzstandort",
+        "description": "Klick uf d'Charte, zum s'Zentrum vom Filterradius festzlege.",
+        "data": {
+          "location": "Referenzstandort"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Verbindig zu de Datequelle fählgschlage. Überprüef dini Internetverbindig.",
+      "no_data": "Es hei kei aktivi Vulkan-Date vo keiner Quelle chönne abgruefe wärde.",
+      "both_sources_disabled": "Mindestens ei Datequelle muss aktiviert si."
+    },
+    "abort": {
+      "already_configured": "Vulkanwält isch bereits konfiguriert."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Vulkanwält",
+        "description": "Aktualisier Filter- und Datequelle-Ystellige.",
+        "data": {
+          "location_mode": "Standortfilter",
+          "radius_km": "Radius (km)",
+          "update_interval": "Aktualisierungsintervall (min)",
+          "source_gvp": "Smithsonian GVP",
+          "source_usgs": "USGS HANS",
+          "unit": "Entfernigseinheit"
+        }
+      },
+      "custom_location": {
+        "title": "Referenzstandort aktualisiere",
+        "data": {
+          "location": "Referenzstandort"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "active_count": {
+        "name": "Aktivi Vulkään"
+      },
+      "weekly_report_count": {
+        "name": "Im Wochebericht"
+      },
+      "elevated_count": {
+        "name": "Vulkään mit erhöhter Alarmstufe"
+      },
+      "highest_alert": {
+        "name": "Höchschti Alarmstufe"
+      },
+      "nearby_count": {
+        "name": "Aktivi Vulkään i de Nöchi"
+      },
+      "closest_volcano": {
+        "name": "Nöchschte aktive Vulkan"
+      },
+      "most_dangerous_volcano": {
+        "name": "Gföhrlichschte Vulkan"
+      }
+    },
+    "binary_sensor": {
+      "activity_nearby": {
+        "name": "Vulkanischi Aktivität i de Nöchi"
+      },
+      "elevated_nearby": {
+        "name": "Vulkan mit erhöhter Alarmstufe i de Nöchi"
+      },
+      "warning_global": {
+        "name": "Globale Vulkanwarnig"
+      }
+    }
+  }
+}
