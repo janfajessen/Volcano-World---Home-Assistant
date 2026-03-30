@@ -1,0 +1,95 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Mundo Volcánico",
+        "description": "Configura que volcáns activos monitorear.\n\nFontes de datos: [Smithsonian GVP]({gvp_url}) + [USGS HANS]({usgs_url}) — non se require clave de API.",
+        "data": {
+          "location_mode": "Filtro de localización",
+          "radius_km": "Radio (km)",
+          "update_interval": "Intervalo de actualización (min)",
+          "source_gvp": "Smithsonian GVP (global, ~45 volcáns activos)",
+          "source_usgs": "USGS HANS (EUA + niveis de alerta)",
+          "unit": "Unidade de distancia"
+        },
+        "data_description": {
+          "location_mode": "Escolle 'Casa' para filtrar pola túa localización de HA, 'Personalizado' para escoller un punto no mapa, ou 'Mundo' para amosar todos os volcáns activos a nivel global.",
+          "radius_km": "Só se usa no modo 'Casa' ou 'Personalizado'. Ignórase no modo 'Mundo'."
+        }
+      },
+      "custom_location": {
+        "title": "Escolle a túa localización de referencia",
+        "description": "Fai clic no mapa para establecer o centro do radio do filtro.",
+        "data": {
+          "location": "Localización de referencia"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Non se puido conectar ás fontes de datos. Comproba a túa conexión a internet.",
+      "no_data": "Non se puideron obter datos de volcáns activos de ningunha fonte.",
+      "both_sources_disabled": "Polo menos unha fonte de datos debe estar activada."
+    },
+    "abort": {
+      "already_configured": "Mundo Volcánico xa está configurado."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Mundo Volcánico",
+        "description": "Actualiza as preferencias de filtro e fontes de datos.",
+        "data": {
+          "location_mode": "Filtro de localización",
+          "radius_km": "Radio (km)",
+          "update_interval": "Intervalo de actualización (min)",
+          "source_gvp": "Smithsonian GVP",
+          "source_usgs": "USGS HANS",
+          "unit": "Unidade de distancia"
+        }
+      },
+      "custom_location": {
+        "title": "Actualizar localización de referencia",
+        "data": {
+          "location": "Localización de referencia"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "active_count": {
+        "name": "Volcáns Activos"
+      },
+      "weekly_report_count": {
+        "name": "No Informe Semanal"
+      },
+      "elevated_count": {
+        "name": "Volcáns con Alerta Elevada"
+      },
+      "highest_alert": {
+        "name": "Nivel de Alerta Máis Alto"
+      },
+      "nearby_count": {
+        "name": "Volcáns Activos Cercanos"
+      },
+      "closest_volcano": {
+        "name": "Volcán Activo Máis Cercano"
+      },
+      "most_dangerous_volcano": {
+        "name": "Volcán Máis Perigoso"
+      }
+    },
+    "binary_sensor": {
+      "activity_nearby": {
+        "name": "Actividade Volcánica Cercana"
+      },
+      "elevated_nearby": {
+        "name": "Volcán con Alerta Elevada Cercano"
+      },
+      "warning_global": {
+        "name": "Alerta Volcánica Global"
+      }
+    }
+  }
+}
