@@ -1,0 +1,95 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "آتش فشاں کی دنیا",
+        "description": "کن فعال آتش فشاں کی نگرانی کرنی ہے ترتیب دیں۔\n\nڈیٹا کے ذرائع: [Smithsonian GVP]({gvp_url}) + [USGS HANS]({usgs_url}) — کوئی API کلید درکار نہیں۔",
+        "data": {
+          "location_mode": "مقام کا فلٹر",
+          "radius_km": "رداس (کلومیٹر)",
+          "update_interval": "تازہ کاری کا وقفہ (منٹ)",
+          "source_gvp": "Smithsonian GVP (عالمی، ~45 فعال آتش فشاں)",
+          "source_usgs": "USGS HANS (امریکہ + انتباہی سطحیں)",
+          "unit": "فاصلہ کی اکائی"
+        },
+        "data_description": {
+          "location_mode": "اپنے HA مقام کے مطابق فلٹر کرنے کے لیے 'گھر'، نقشے پر نقطہ منتخب کرنے کے لیے 'اپنی مرضی'، یا عالمی سطح پر تمام فعال آتش فشاں دکھانے کے لیے 'دنیا' منتخب کریں۔",
+          "radius_km": "صرف 'گھر' یا 'اپنی مرضی' موڈ میں استعمال ہوتا ہے۔ 'دنیا' موڈ میں نظر انداز کیا جاتا ہے۔"
+        }
+      },
+      "custom_location": {
+        "title": "اپنا حوالہ مقام منتخب کریں",
+        "description": "فلٹر رداس کا مرکز مقرر کرنے کے لیے نقشے پر کلک کریں۔",
+        "data": {
+          "location": "حوالہ مقام"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "ڈیٹا کے ذرائع سے رابطہ نہیں کیا جا سکا۔ اپنا انٹرنیٹ کنکشن چیک کریں۔",
+      "no_data": "کسی بھی ذریعہ سے فعال آتش فشاں کا ڈیٹا حاصل نہیں کیا جا سکا۔",
+      "both_sources_disabled": "کم از کم ایک ڈیٹا کا ذریعہ فعال ہونا چاہیے۔"
+    },
+    "abort": {
+      "already_configured": "آتش فشاں کی دنیا پہلے ہی ترتیب دی جا چکی ہے۔"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "آتش فشاں کی دنیا",
+        "description": "فلٹر اور ڈیٹا کے ذریعہ کی ترجیحات کو تازہ کریں۔",
+        "data": {
+          "location_mode": "مقام کا فلٹر",
+          "radius_km": "رداس (کلومیٹر)",
+          "update_interval": "تازہ کاری کا وقفہ (منٹ)",
+          "source_gvp": "Smithsonian GVP",
+          "source_usgs": "USGS HANS",
+          "unit": "فاصلہ کی اکائی"
+        }
+      },
+      "custom_location": {
+        "title": "حوالہ مقام تازہ کریں",
+        "data": {
+          "location": "حوالہ مقام"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "active_count": {
+        "name": "فعال آتش فشاں"
+      },
+      "weekly_report_count": {
+        "name": "ہفتہ وار رپورٹ میں"
+      },
+      "elevated_count": {
+        "name": "اعلی انتباہی سطح والے آتش فشاں"
+      },
+      "highest_alert": {
+        "name": "اعلی ترین انتباہی سطح"
+      },
+      "nearby_count": {
+        "name": "قریبی فعال آتش فشاں"
+      },
+      "closest_volcano": {
+        "name": "قریب ترین فعال آتش فشاں"
+      },
+      "most_dangerous_volcano": {
+        "name": "انتہائی خطرناک آتش فشاں"
+      }
+    },
+    "binary_sensor": {
+      "activity_nearby": {
+        "name": "قریبی آتش فشاں سرگرمی"
+      },
+      "elevated_nearby": {
+        "name": "قریبی اعلی انتباہی سطح والا آتش فشاں"
+      },
+      "warning_global": {
+        "name": "عالمی آتش فشاں انتباہ"
+      }
+    }
+  }
+}
