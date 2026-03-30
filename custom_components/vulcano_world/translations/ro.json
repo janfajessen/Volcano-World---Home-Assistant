@@ -1,0 +1,95 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Lumea Vulcanilor",
+        "description": "Configurează ce vulcani activi să fie monitorizați.\n\nSurse de date: [Smithsonian GVP]({gvp_url}) + [USGS HANS]({usgs_url}) — nu este necesară o cheie API.",
+        "data": {
+          "location_mode": "Filtru locație",
+          "radius_km": "Rază (km)",
+          "update_interval": "Interval actualizare (min)",
+          "source_gvp": "Smithsonian GVP (global, ~45 de vulcani activi)",
+          "source_usgs": "USGS HANS (SUA + niveluri de alertă)",
+          "unit": "Unitate de distanță"
+        },
+        "data_description": {
+          "location_mode": "Alege 'Acasă' pentru a filtra după locația ta HA, 'Personalizat' pentru a selecta un punct pe hartă sau 'Lume' pentru a afișa toți vulcanii activi la nivel global.",
+          "radius_km": "Folosit doar în modul 'Acasă' sau 'Personalizat'. Ignorat în modul 'Lume'."
+        }
+      },
+      "custom_location": {
+        "title": "Alege locația ta de referință",
+        "description": "Dă clic pe hartă pentru a seta centrul razei filtrului.",
+        "data": {
+          "location": "Locație de referință"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Nu s-a putut conecta la sursele de date. Verifică conexiunea la internet.",
+      "no_data": "Nu s-au putut prelua date despre vulcani activi din nicio sursă.",
+      "both_sources_disabled": "Cel puțin o sursă de date trebuie să fie activată."
+    },
+    "abort": {
+      "already_configured": "Lumea Vulcanilor este deja configurată."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Lumea Vulcanilor",
+        "description": "Actualizează preferințele de filtru și sursă de date.",
+        "data": {
+          "location_mode": "Filtru locație",
+          "radius_km": "Rază (km)",
+          "update_interval": "Interval actualizare (min)",
+          "source_gvp": "Smithsonian GVP",
+          "source_usgs": "USGS HANS",
+          "unit": "Unitate de distanță"
+        }
+      },
+      "custom_location": {
+        "title": "Actualizează locația de referință",
+        "data": {
+          "location": "Locație de referință"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "active_count": {
+        "name": "Vulcani Activi"
+      },
+      "weekly_report_count": {
+        "name": "În Raportul Săptămânal"
+      },
+      "elevated_count": {
+        "name": "Vulcani cu Alertă Ridicată"
+      },
+      "highest_alert": {
+        "name": "Cel Mai Ridicat Nivel de Alertă"
+      },
+      "nearby_count": {
+        "name": "Vulcani Activi în Apropiere"
+      },
+      "closest_volcano": {
+        "name": "Cel Mai Apropiat Vulcan Activ"
+      },
+      "most_dangerous_volcano": {
+        "name": "Cel Mai Periculos Vulcan"
+      }
+    },
+    "binary_sensor": {
+      "activity_nearby": {
+        "name": "Activitate Vulcanică în Apropiere"
+      },
+      "elevated_nearby": {
+        "name": "Vulcan cu Alertă Ridicată în Apropiere"
+      },
+      "warning_global": {
+        "name": "Alertă Vulcanică Globală"
+      }
+    }
+  }
+}
