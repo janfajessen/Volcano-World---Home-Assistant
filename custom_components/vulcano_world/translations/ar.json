@@ -1,0 +1,95 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "عالم البراكين",
+        "description": "قم بتكوين البراكين النشطة التي تريد مراقبتها.\n\nمصادر البيانات: [Smithsonian GVP]({gvp_url}) + [USGS HANS]({usgs_url}) — لا يلزم مفتاح API.",
+        "data": {
+          "location_mode": "تصفية الموقع",
+          "radius_km": "نصف القطر (كم)",
+          "update_interval": "فترة التحديث (دقيقة)",
+          "source_gvp": "Smithsonian GVP (عالمي، ~45 بركانًا نشطًا)",
+          "source_usgs": "USGS HANS (الولايات المتحدة + مستويات التنبيه)",
+          "unit": "وحدة المسافة"
+        },
+        "data_description": {
+          "location_mode": "اختر 'المنزل' للتصفية حسب موقع HA الخاص بك، أو 'مخصص' لتحديد نقطة على الخريطة، أو 'العالم' لعرض جميع البراكين النشطة عالميًا.",
+          "radius_km": "يُستخدم فقط في وضع 'المنزل' أو 'مخصص'. يتم تجاهله في وضع 'العالم'."
+        }
+      },
+      "custom_location": {
+        "title": "اختر موقعك المرجعي",
+        "description": "انقر على الخريطة لتعيين مركز نصف قطر التصفية.",
+        "data": {
+          "location": "الموقع المرجعي"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "تعذر الاتصال بمصادر البيانات. تحقق من اتصالك بالإنترنت.",
+      "no_data": "تعذر استرجاع بيانات البراكين النشطة من أي مصدر.",
+      "both_sources_disabled": "يجب تمكين مصدر بيانات واحد على الأقل."
+    },
+    "abort": {
+      "already_configured": "تم تكوين عالم البراكين بالفعل."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "عالم البراكين",
+        "description": "تحديث تفضيلات التصفية ومصادر البيانات.",
+        "data": {
+          "location_mode": "تصفية الموقع",
+          "radius_km": "نصف القطر (كم)",
+          "update_interval": "فترة التحديث (دقيقة)",
+          "source_gvp": "Smithsonian GVP",
+          "source_usgs": "USGS HANS",
+          "unit": "وحدة المسافة"
+        }
+      },
+      "custom_location": {
+        "title": "تحديث الموقع المرجعي",
+        "data": {
+          "location": "الموقع المرجعي"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "active_count": {
+        "name": "البراكين النشطة"
+      },
+      "weekly_report_count": {
+        "name": "في التقرير الأسبوعي"
+      },
+      "elevated_count": {
+        "name": "براكين ذات تنبيه مرتفع"
+      },
+      "highest_alert": {
+        "name": "أعلى مستوى تنبيه"
+      },
+      "nearby_count": {
+        "name": "براكين نشطة قريبة"
+      },
+      "closest_volcano": {
+        "name": "أقرب بركان نشط"
+      },
+      "most_dangerous_volcano": {
+        "name": "أخطر بركان"
+      }
+    },
+    "binary_sensor": {
+      "activity_nearby": {
+        "name": "نشاط بركاني قريب"
+      },
+      "elevated_nearby": {
+        "name": "بركان مرتفع التنبيه قريب"
+      },
+      "warning_global": {
+        "name": "تحذير بركاني عالمي"
+      }
+    }
+  }
+}
