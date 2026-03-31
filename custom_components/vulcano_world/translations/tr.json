@@ -14,7 +14,7 @@
         },
         "data_description": {
           "location_mode": "HA konumunuza göre filtrelemek için 'Ev', haritada bir nokta seçmek için 'Özel' veya dünyadaki tüm aktif volkanları göstermek için 'Dünya' seçeneğini seçin.",
-          "radius_km": "Yalnızca 'Ev' veya 'Özel' modunda kullanılır. 'Dünya' modunda yok sayılır."
+          "radius_km": "Aralık: 50–20.000 km · 31–12.427 mil"
         }
       },
       "custom_location": {
@@ -46,6 +46,9 @@
           "source_gvp": "Smithsonian GVP",
           "source_usgs": "USGS HANS",
           "unit": "Mesafe birimi"
+        },
+        "data_description": {
+          "radius_km": "Aralık: 50–20.000 km · 31–12.427 mil"
         }
       },
       "custom_location": {
