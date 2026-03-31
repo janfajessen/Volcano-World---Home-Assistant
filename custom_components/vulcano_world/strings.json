@@ -14,7 +14,7 @@
         },
         "data_description": {
           "location_mode": "Choose 'Home' to filter by your HA location, 'Custom' to pick a point on the map, or 'World' to show all active volcanoes globally.",
-          "radius_km": "Only used in 'Home' or 'Custom' mode. Ignored in 'World' mode."
+          "radius_km": "Range: 50–20,000 km · 31–12,427 mi"
         }
       },
       "custom_location": {
@@ -46,6 +46,9 @@
           "source_gvp": "Smithsonian GVP",
           "source_usgs": "USGS HANS",
           "unit": "Distance unit"
+        },
+        "data_description": {
+          "radius_km": "Range: 50–20,000 km · 31–12,427 mi"
         }
       },
       "custom_location": {

@@ -89,6 +89,7 @@ def _mode_schema(defaults: dict[str, Any]) -> vol.Schema:
         vol.Required(
             CONF_RADIUS_KM,
             default=r_display,
+            description={"suggested_value": r_display},
         ): selector.NumberSelector(selector.NumberSelectorConfig(
             min=r_min,
             max=r_max,
