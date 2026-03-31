@@ -14,7 +14,7 @@
         },
         "data_description": {
           "location_mode": "Chagua 'Nyumbani' kuchuja kwa eneo lako la HA, 'Maalum' kuchagua sehemu kwenye ramani, au 'Dunia' kuonyesha volkeno zote hai duniani.",
-          "radius_km": "Inatumika tu katika hali ya 'Nyumbani' au 'Maalum'. Inapuuzwa katika hali ya 'Dunia'."
+          "radius_km": "Kiwango: 50–20,000 km · 31–12,427 maili"
         }
       },
       "custom_location": {
@@ -46,6 +46,9 @@
           "source_gvp": "Smithsonian GVP",
           "source_usgs": "USGS HANS",
           "unit": "Kitengo cha umbali"
+        },
+        "data_description": {
+          "radius_km": "Kiwango: 50–20,000 km · 31–12,427 maili"
         }
       },
       "custom_location": {
