@@ -14,7 +14,7 @@
         },
         "data_description": {
           "location_mode": "Chọn 'Nhà' để lọc theo vị trí HA của bạn, 'Tùy chỉnh' để chọn một điểm trên bản đồ, hoặc 'Thế giới' để hiển thị tất cả núi lửa đang hoạt động trên toàn cầu.",
-          "radius_km": "Chỉ được sử dụng ở chế độ 'Nhà' hoặc 'Tùy chỉnh'. Bị bỏ qua ở chế độ 'Thế giới'."
+          "radius_km": "Phạm vi: 50–20.000 km · 31–12.427 dặm"
         }
       },
       "custom_location": {
@@ -46,6 +46,9 @@
           "source_gvp": "Smithsonian GVP",
           "source_usgs": "USGS HANS",
           "unit": "Đơn vị khoảng cách"
+        },
+        "data_description": {
+          "radius_km": "Phạm vi: 50–20.000 km · 31–12.427 dặm"
         }
       },
       "custom_location": {
