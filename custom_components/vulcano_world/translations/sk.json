@@ -14,7 +14,7 @@
         },
         "data_description": {
           "location_mode": "Vyberte 'Domov' pre filtrovanie podľa vašej HA polohy, 'Vlastný' pre výber bodu na mape alebo 'Svet' pre zobrazenie všetkých aktívnych sopiek na svete.",
-          "radius_km": "Používa sa len v režime 'Domov' alebo 'Vlastný'. V režime 'Svet' sa ignoruje."
+          "radius_km": "Rozsah: 50–20 000 km · 31–12 427 míľ"
         }
       },
       "custom_location": {
@@ -46,6 +46,9 @@
           "source_gvp": "Smithsonian GVP",
           "source_usgs": "USGS HANS",
           "unit": "Jednotka vzdialenosti"
+        },
+        "data_description": {
+          "radius_km": "Rozsah: 50–20 000 km · 31–12 427 míľ"
         }
       },
       "custom_location": {
