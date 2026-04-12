@@ -1,5 +1,5 @@
 # 🌋 Volcano World 🌋 <br> Home Assistant Integration
-
+<div align="center">
 <img src="https://github.com/janfajessen/Volcano-World/blob/76daa9ee24ca0d4b9e27bff34318d01607362da9/brands/logo%402x.png" alt="Volcano World" width="400">
 
 [![hacs_badge](https://img.shields.io/badge/HACS-Custom-orange.svg)](https://github.com/hacs/integration)
@@ -11,10 +11,11 @@
 
 A Home Assistant integration that tracks active and erupting volcanoes worldwide. Every active volcano appears as a pin on the HA map. Sensors and binary sensors enable automations and dashboards.
 
+</div>
+
 **Data sources — no API key required:**
 - 🏛️ [Smithsonian Global Volcanism Program (GVP)](https://volcano.si.edu) — global eruption database (~45 continuously active volcanoes)
 - 🇺🇸 [USGS Volcano Hazards HANS API](https://volcanoes.usgs.gov) — official US alert levels (GREEN / YELLOW / ORANGE / RED)
-
 ---
 
 ## Features
